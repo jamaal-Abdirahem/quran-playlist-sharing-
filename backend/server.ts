@@ -5,6 +5,7 @@ import bcrypt from 'bcryptjs';
 import { createServer as createViteServer } from 'vite';
 import db, { initDb } from './src/db';
 import { z } from 'zod';
+import path from 'path';
 
 const app = express();
 const PORT = 3000;
@@ -284,6 +285,7 @@ async function startServer() {
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
+      root: path.resolve(__dirname, '../frontend'),
     });
     app.use(vite.middlewares);
   }
