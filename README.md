@@ -1,11 +1,36 @@
-<div align="center">
+# Quran Playlist Platform
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A full-stack application for creating and sharing Quran playlists.
 
-  <h1>Built with AI Studio</h2>
+## Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **User Accounts**: Register, Login, Profile management.
+- **Playlists**: Create, Edit, Delete, Public/Private visibility.
+- **Tracks**: Add Quran tracks with audio URLs.
+- **Social**: Like playlists, Comment on playlists.
+- **Admin Dashboard**: View platform stats.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Tech Stack
 
-</div>
+- **Frontend**: React, Tailwind CSS, Lucide Icons, Axios.
+- **Backend**: Node.js, Express, SQLite (better-sqlite3).
+- **Auth**: JWT, bcryptjs.
+
+## Getting Started
+
+1.  **Install Dependencies**: `npm install`
+2.  **Run Development Server**: `npm run dev`
+
+## Default Credentials
+
+- **Admin User**: `admin@example.com`
+- **Password**: `admin123`
+
+## API Endpoints
+
+- `POST /api/auth/register`
+- `POST /api/auth/login`
+- `GET /api/playlists`
+- `POST /api/playlists`
+- `GET /api/playlists/:id`
+- `POST /api/tracks`
